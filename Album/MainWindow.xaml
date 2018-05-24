@@ -1,22 +1,29 @@
-﻿<Window x:Class="Album.MainWindow"
+﻿<Window x:Class="AlbumDemo.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Album"
         mc:Ignorable="d"
-        Title="Album: " Height="350" Width="525">
-    <Grid>
-        <ListBox HorizontalAlignment="Left" Height="198" Margin="16,16,0,0" VerticalAlignment="Top" Width="212"/>
-        <TextBlock HorizontalAlignment="Left" Margin="241,30,0,0" TextWrapping="Wrap" Text="Title:" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="287,22,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220"/>
-        <TextBlock HorizontalAlignment="Left" Margin="244,68,0,0" TextWrapping="Wrap" Text="Artist:" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="287,60,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220"/>
-        <CheckBox Content="Classical" HorizontalAlignment="Left" Margin="244,104,0,0" VerticalAlignment="Top" />
-        <TextBlock HorizontalAlignment="Left" Margin="244,137,0,0" TextWrapping="Wrap" Text="Composer:" VerticalAlignment="Top" Width="68"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="317,129,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190" RenderTransformOrigin="0.495,-1.147"/>
-        <Button Content="Apply" HorizontalAlignment="Left" Margin="244,195,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Cancel" HorizontalAlignment="Left" Margin="368,195,0,0" VerticalAlignment="Top" Width="75"/>
-
+        Title="Album: " Height="293.072" Width="679.97">
+    <Grid RenderTransformOrigin="0.5,0.5">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="-0.041"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <ListBox HorizontalAlignment="Left" Height="198" Margin="16,16,0,0" VerticalAlignment="Top" Width="301" Name="lstAlbums" SelectionChanged="lstAlbums_SelectionChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="334,30,0,0" TextWrapping="Wrap" Text="Title:" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="380,22,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="282" Name="txtTitle"  />
+        <TextBlock HorizontalAlignment="Left" Margin="337,68,0,0" TextWrapping="Wrap" Text="Artist:" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="380,60,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="282" Name="txtArtist"/>
+        <CheckBox Content="Classical" HorizontalAlignment="Left" Margin="337,104,0,0" VerticalAlignment="Top" Name="chkClassical" />
+        <TextBlock HorizontalAlignment="Left" Margin="337,137,0,0" TextWrapping="Wrap" Text="Composer:" VerticalAlignment="Top" Width="68"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="410,129,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="252" RenderTransformOrigin="0.495,-1.147" Name="txtComposer"/>
+        <Button Content="Apply" HorizontalAlignment="Left" Margin="337,195,0,0" VerticalAlignment="Top" Width="75" Click="btnApply_Click" Name="btnApply" />
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="461,195,0,0" VerticalAlignment="Top" Width="75" Click="btnCancel_Click" Name="btnCancel" />
     </Grid>
 </Window>
