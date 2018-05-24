@@ -5,8 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Album"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Album: " Height="350" Width="525">
     <Grid>
-        
+        <ListBox HorizontalAlignment="Left" Height="198" Margin="16,16,0,0" VerticalAlignment="Top" Width="212"/>
+        <TextBlock HorizontalAlignment="Left" Margin="241,30,0,0" TextWrapping="Wrap" Text="Title:" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="287,22,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220"/>
+        <TextBlock HorizontalAlignment="Left" Margin="244,68,0,0" TextWrapping="Wrap" Text="Artist:" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="287,60,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220"/>
+        <CheckBox Content="Classical" HorizontalAlignment="Left" Margin="244,104,0,0" VerticalAlignment="Top" />
+        <TextBlock HorizontalAlignment="Left" Margin="244,137,0,0" TextWrapping="Wrap" Text="Composer:" VerticalAlignment="Top" Width="68"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="317,129,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190" RenderTransformOrigin="0.495,-1.147"/>
+        <Button Content="Apply" HorizontalAlignment="Left" Margin="244,195,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="368,195,0,0" VerticalAlignment="Top" Width="75"/>
+
     </Grid>
 </Window>
